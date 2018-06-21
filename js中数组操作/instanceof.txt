@@ -1,0 +1,6 @@
+检测一个对象是否是数组;(用来对付复杂数据类型;)
+// 简单数据类型 typeof ;
+A instanceof B  // A是不是B造出来的;
+例：
+var arr = [1,2,3];
+console.log(arr instanceof Array); // arr属不属于Array类型;

@@ -1,0 +1,7 @@
+数组.indexOf(元素);      // 给元素，查索引(从前往后)
+数组.lastIndexOf(元素);  // 给元素，查索引(从后往前)
+例：
+    var arr = ["a","b","c","d","c","b","b"];
+    console.log(arr.indexOf("b"));        // 1 查到以后立刻返回
+    console.log(arr.lastIndexOf("b"));    // 6 找到以后立刻返回
+    console.log(arr.indexOf("xxx"));    // -1;  查不到就返回-1；

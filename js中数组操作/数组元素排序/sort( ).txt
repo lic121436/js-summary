@@ -1,0 +1,23 @@
+sort() // 数组中元素排序;(默认：从小到大)
+      //  默认：按照首个字符的Unicode编码排序;如果第一个相同那么就比较第二个...
+      例：        
+    var arr = [4,5,1,3,2,7,6];
+    var aaa =arr.sort();
+    console.log(aaa);          // [1, 2, 3, 4, 5, 6, 7]
+    console.log(aaa === arr); // true 原数组被排序了(冒泡排序)
+    // 默认还可以排列字母;
+    var arr2 = ["c","e","d","a","b"];
+    var bbb = arr2.sort();
+    console.log(bbb);         // ["a", "b", "c", "d", "e"]
+    console.log(bbb===arr2); // true 原数组被排序了(冒泡排序)
+
+sort() //数值大小排序方法,需要借助回调函数;
+      例：
+      var arr = [4,5,1,13,2,7,6];
+      // 回调函数里面返回值如果是：参数1-参数2;升幂；   参数2-参数1;降幂；
+      arr.sort(function (a,b) {
+        return a-b; // 升序
+        // return b-a; // 降序
+        // return b.value-a.value; // 按照元素value属性的大小排序;
+      });
+      console.log(arr); // [1, 2, 4, 5, 6, 7, 13]

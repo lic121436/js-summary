@@ -1,0 +1,11 @@
+// 对数组中每一项运行回调函数，如果该函数对某一项返回true，则some返回true; 像杀手，有一个成功，就胜利了！！！
+例：
+var arr = [111,222,333,444,555];
+var bool = arr.some(function (ele,i,array) {
+    //判断：数组中有3的倍数
+    if(ele%3 == 0){
+        return true;
+    }
+    return false;
+})
+alert(bool); // true ; 有一个成功就是true

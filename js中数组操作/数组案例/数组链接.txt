@@ -1,0 +1,11 @@
+将一个字符串数组输出为分割的形式，比如“刘备张飞关羽”。使用两种方式实现
+var arr = ["刘备","张飞","关羽"];
+var separator = "|";
+// 通过for循环累加
+var str = arr[0];
+for(var i=1;i<arr.length;i++){
+    str += separator+arr[i];
+}
+console.log(str); // 刘备|张飞|关羽
+// join()可以把数组中的元素链接成字符串;
+console.log(arr.join("|")); // 刘备|张飞|关羽

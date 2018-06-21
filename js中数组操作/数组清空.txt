@@ -1,0 +1,15 @@
+    1. arr.length = 0;  // (不好，伪数组无法清空)
+    2. arr.splice(0);   // 伪数组没有这个方法;
+    3. arr = [];        // 可以操作伪数组; (推荐!)
+	
+	
+	
+// 伪数组: 就是长的像数组，但是没有数组的方法;也不能添加和删除元素;
+例： // arguments
+fn(111,222,333);
+function fn(){
+    arguments.length = 0;   // 无法清空 返回 [1, 2, 3]
+    arguments.splice(0);    // 会报错 arguments.splice is not a function
+    arguments = [];         // 可以清空,返回空数组[] 
+    console.log(arguments);
+}

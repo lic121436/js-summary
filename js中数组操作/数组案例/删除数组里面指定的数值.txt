@@ -1,0 +1,12 @@
+ 工资的数组[1500, 1200, 2000, 2100, 1800],把工资超过2000的删除
+ var arr = [1500, 1200, 2000, 2100, 1800];
+// 利用filter()形成一个数组;return true;组成的数组;
+var newArr = arr.filter(function (ele, i, array) {
+    // 2000以上返回false;
+    if(ele < 2000){
+        return true;
+    }else{
+        return false;
+    }
+});
+console.log(newArr); // [1500, 1200, 1800]

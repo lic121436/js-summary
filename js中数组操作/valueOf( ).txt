@@ -1,0 +1,4 @@
+数组.valueOf();  //返回数组本身;   
+例：
+var arr = ["aaa","bbb","ccc"];
+console.log(arr.valueOf());  // 返回数组本身  ["aaa","bbb","ccc"]

@@ -1,0 +1,4 @@
+reverse()   // 翻转数组
+	例:
+    var arr1 = [1,2,3,4,5];
+    var aaa = arr1.reverse(); // [5,4,3,2,1]

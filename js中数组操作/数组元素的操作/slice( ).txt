@@ -1,0 +1,8 @@
+数组.slice(开始索引值，结束索引值);     //数组截取;
+      例 ：
+      var arr = [1, 2, 3, "a", "b", "c"];
+      console.log(arr.slice(3));            // 从索引值为3截取到最后;["a", "b", "c"]
+      console.log(arr.slice(0,3));          // 包左不包右;[1, 2, 3]
+      console.log(arr.slice(-2));           // 负数是后几个;["b", "c"]
+      console.log(arr.slice(3,0));          // 如果前面的比后面的大，那么就是[];[]
+      console.log(arr);                     // 原数组不被修改;[1, 2, 3, "a", "b", "c"]

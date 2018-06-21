@@ -1,0 +1,12 @@
+// 和for循环一样；没有返回值;
+例：
+var arr = [111,222,333,444,555];
+var sum = 0;
+var aaa = arr.forEach(function (element,index,array) {
+    console.log(element);   // 输出数组中的每一个元素
+    console.log(index);     // 数组元素对应的索引值
+    console.log(array);     // 数组本身 [111, 222, 333, 444, 555]
+    sum += element;         //数组中元素求和;
+});
+console.log(sum);           // 数组元素加起来的和
+console.log(aaa);           //undefined；没有返回值 所以返回undefined

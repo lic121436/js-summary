@@ -1,0 +1,11 @@
+//  对数组中每一项运行回调函数，返回该函数的结果组成的新数组
+//  return什么新数组中就有什么; 不return返回undefined; 对数组二次加工
+例：
+var arr = [111,222,333,444,555];
+var newArr = arr.map(function (element, index, array) {
+    if(index == 2){
+        return element; // 这里return了 所以下面返回的值是333
+    }
+    return element*100; // 返回的元素值都乘上100后的值
+})
+console.log(newArr);    // [11100, 22200, 333, 44400, 55500]

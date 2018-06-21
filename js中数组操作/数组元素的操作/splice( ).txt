@@ -1,0 +1,18 @@
+数组.splice(开始索引值，删除几个，替换内容1，替换内容2，...);  
+    // 替换和删除;
+    // 改变原数组;返回值是被删除/替换的内容
+    例:
+    var arr = [1,2,3,4,5,6,"a", "b", "c"]
+    arr.splice(5);        // 从索引值为5截取到最后;(删除)
+    console.log(arr);     // [1, 2, 3, 4, 5]
+    arr.splice(1,2);      // (删除指定个数)从索引为1的开始删除2个
+    console.log(arr);     // [1, 4, 5]
+
+    // 替换
+    var arr = [1,2,3,4,5,6,"a", "b", "c"];
+    console.log(arr.splice(3,3,"aaa","bbb","ccc"));    // (删除指定数并替换)
+    console.log(arr);     // [1, 2, 3, "aaa", "bbb", "ccc", "a", "b", "c"]
+    // 添加
+    arr.splice(3,0,"aaa","bbb","ccc"); // (删除指定个数)
+
+    console.log(arr); // 截取或者替换之后的;   [1, 2, 3, "aaa", "bbb", "ccc", "aaa", "bbb", "ccc", "a", "b", "c"]

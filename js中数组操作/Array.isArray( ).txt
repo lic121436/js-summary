@@ -1,0 +1,6 @@
+Array.isArray(参数); // 判断参数是不是数组,返回布尔值;
+例：
+var arr = [1,2,3];
+var num = 123;
+console.log(Array.isArray(arr)); //true
+console.log(Array.isArray(num)); //false

@@ -1,0 +1,14 @@
+// 对数组中每一项运行回调函数，该函数返回结果是true的项组成的新数组
+// 新数组是有老数组中的元素组成的，return为ture的项;
+例：
+var arr = [111,222,333,444,555];
+var newArr = arr.filter(function (element, index, array) {
+    // 只要是奇数，就组成数组;(数组中辨别元素)
+    if(element%2 === 0){
+        return true;
+    }else{
+        return false;
+    }
+})
+
+console.log(newArr); // [222, 444]

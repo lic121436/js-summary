@@ -1,0 +1,11 @@
+数组.unshift() //在数组的最前面添加一个元素;
+数组.shift()  //不需要参数;在数组的最前面删除一项;
+	例：
+    var arr = [1,2,3];
+    aaa = arr.unshift("abc");  // 在数组的最前面添加一个元素;
+    console.log(arr);          //元素被修改了
+    console.log(aaa);          // 返回值是数组的长度;
+
+    aaa = arr.shift();         // 不需要参数;在数组的最前面删除一项;
+    console.log(arr);          // 元素被修改了
+    console.log(aaa);          // 被删除的那一项

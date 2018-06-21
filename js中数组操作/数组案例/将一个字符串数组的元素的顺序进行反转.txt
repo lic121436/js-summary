@@ -1,0 +1,14 @@
+将一个字符串数组的元素的顺序进行反转。
+[“a”, “b”, “c”, “d”] -> [ “d”,“c”,“b”,“a”]。使用两种种方式实现。提示：第i个和第length-i-1个进行交换
+
+// 数组.reverse() 方法
+    var arr = ["a", "b", "c", "d"];
+    console.log(arr.reverse()); // ["d", "c", "b", "a"]
+
+//  三种：1.正向遍历，反向添加;  2.反向遍历，正向添加;   3.元数组元素交换位置;
+    for(var i = 0; i < arr.length/2; i++){
+        var temp = arr[i];
+        arr[i] = arr[arr.length-1-i];
+        arr[arr.length-1-i] = temp;
+    }
+    console.log(arr);

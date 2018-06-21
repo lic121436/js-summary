@@ -1,0 +1,4 @@
+数组.toString(); // 把数组变成字符串,去除了[],内容用逗号链接;
+例：
+var arr = ["aaa","bbb","ccc"];
+console.log(arr.toString());   // 返回 aaa,bbb,ccc

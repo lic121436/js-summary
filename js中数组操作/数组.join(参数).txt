@@ -1,0 +1,6 @@
+数组.join(参数);  // 数组中的元素可以按照参数进行链接变成一个字符串;
+console.log(arr.join());    //和toString()一样用逗号链接
+console.log(arr.join("|")); //用参数链接
+console.log(arr.join("&")); //用参数链接
+console.log(arr.join(" ")); //如果是空格，真的用空格链接
+console.log(arr.join(""));  //空字符是无缝连接

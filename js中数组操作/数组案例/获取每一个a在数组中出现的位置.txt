@@ -1,0 +1,9 @@
+ [“c”, “a”, “z”, “a”, “x”, “a”] 找到数组中每一个a出现的位置
+ var arr = ["c", "a", "z", "a", "x", "a"];
+   // 遍历数组(for/while/do...while)    forEach();
+   arr.forEach(function (ele, index, array) {
+       // 如果元素等于“a”，那么就输出索引值；
+       if("a" === ele){
+           console.log(index);
+       }
+   });

@@ -1,0 +1,24 @@
+对数组中每一项运行回调函数，如果都返回true，every返回true，
+如果有一项返回false，则停止遍历 every返回false；不写默认返回false
+像保镖失误一次，游戏结束！！！
+例：
+1. var arr = [111,222,333,444,555];
+    arr.every(function (a,index,array) {
+        console.log(a);    // 元素
+        console.log(index);    // 索引值
+        console.log(array);    // 数组本身;
+        console.log("-----");    // 数组本身;
+        //数组中元素赋值：array[index] = 值;      a=有时候无法赋值;
+        return true;
+    });
+
+2.  // every返回一个bool值，全部是true才是true；有一个是false，结果就是false
+    var bool = arr.every(function (element, index, array) {
+        // 判断：我们定义所有元素都大于200;
+        if(element > 200){
+            return true;
+        }else{
+            return false;
+        }
+    })
+    alert(bool); // false
