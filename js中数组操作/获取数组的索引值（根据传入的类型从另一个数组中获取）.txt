@@ -1,0 +1,14 @@
+  /**
+   * 获取数组的索引值（根据传入的类型）
+   */
+  transformationIndex(arr, typeId) {
+    let rIndex;
+    if (arr && arr.length) {
+      arr.filter((val, index, arr) => {
+        if (val.rescue_type_id == typeId) {
+          rIndex = index;
+        }
+      });
+      return rIndex;
+    }
+  },
